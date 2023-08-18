@@ -6,10 +6,15 @@ This is currently untested and unfinished
 This code will turn your Arduino nano into a boost controller (with the addition of some hardware)
 Hardware needed:
 128x64 SSD1306 I2C OLED LCD (https://www.amazon.com/HiLetgo-Serial-SSH1106-Display-Arduino/dp/B01MRR4LVE)
+
 Bosche 3BAR map sensor (barbed) (https://www.reveltronics.com/en/shop/70/6/onboard-computers/boost-pressure-sensor-map-3bar-5v-detail)
+
 3 port electronic mac valve (https://www.amazon.com/Solenoid-Electronic-Control-Fittings-35A-AAA-DDBA-1BA/dp/B088FXFG1G)
+
 MOSFET trigger board (https://www.amazon.com/DEVMO-High-Power-Adjustment-Electronic-Brightness/dp/B0899XYBYB)
+
 momentary switches/buttons (4) (https://www.amazon.com/Twidec-Waterproof-Momentary-Pre-soldered-PBS-33B-BK-X/dp/B08JHW8BPV)
+
 you will also need resistors, I have not yet determined the resistance
 
 this boost controller works differently than most electonic controllers on the market.
