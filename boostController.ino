@@ -277,14 +277,12 @@ void modeSwitch() {
     } else if (mode == 4) {
       soption = scale;
     }
-    mode++;
     changed = 0;
   } else if (mode == 5) {
     scale = soption;
     calculateEXZval();
     saveValues();
     soption = 0;
-    mode++;
   }
 }
 
