@@ -10,8 +10,8 @@ Bosche 3BAR map sensor (barbed) (https://www.reveltronics.com/en/shop/70/6/onboa
 3 port electronic mac valve (https://www.amazon.com/Solenoid-Electronic-Control-Fittings-35A-AAA-DDBA-1BA/dp/B088FXFG1G)  
 MOSFET trigger board (https://www.amazon.com/DEVMO-High-Power-Adjustment-Electronic-Brightness/dp/B0899XYBYB)  
 momentary switches/buttons (4) (https://www.amazon.com/Twidec-Waterproof-Momentary-Pre-soldered-PBS-33B-BK-X/dp/B08JHW8BPV)  
-you will also need resistors, I have not yet determined the resistance  
-
+10k ohm resistors (https://www.amazon.com/Adafruit-Through-Hole-Resistors-Pack-ADA2784/dp/B01GQFVSXK)  
+  
 this boost controller works differently than most electonic controllers on the market.
 
 The configuration settings for this are below:
