@@ -183,7 +183,13 @@ void screen(double mapReading) {
   }else if (mode == 2 || mode == 3 || mode == 4) {
     display.setCursor(0,0);
     display.setTextSize(1);
-    display.println("Set Spring Pressure:");
+    if (mode == 2) {
+      display.println("Set Spring Pressure:");
+    } else if (mode == 3) {
+      display.println("Set WG Open:");
+    } else if (mode == 4) {
+      display.println("Set Max Boost:");
+    }
     if (soption == 0) {
       display.setTextColor(BLACK, WHITE);
     }
