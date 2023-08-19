@@ -186,7 +186,7 @@ void screen(double mapReading) {
     if (mode == 2) {
       display.println("Set Spring Pressure:");
     } else if (mode == 3) {
-      display.println("Set WG Open:");
+      display.println("Set Crack Pressure:");
     } else if (mode == 4) {
       display.println("Set Max Boost:");
     }
@@ -262,10 +262,22 @@ void modeSwitch() {
       }
       if (mode == 2) {
         springPress = value;
+        if (springPress > openEnd) {
+          openEnd = value;
+        }
       } else if (mode == 3) {
         openStart = value;
+        if (openStart > openEnd) {
+          openEnd = openStart;
+        }
       } else if (mode == 4) {
         openEnd = value;
+        if (openEnd < openStart) {
+          openEnd = openStart;
+        }
+        if (openEnd < springPress) {
+          openEnd = springPress;
+        }
       }
       saveValues();
       calculateEXZval();
