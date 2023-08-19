@@ -17,7 +17,7 @@ this boost controller works differently than most electonic controllers on the m
 The configuration settings for this are below:
 Preferred Unit
 Spring Pressure
-WG Open
+Crack Pressure
 Max Boost
 Scale
 
@@ -25,11 +25,11 @@ Preferred unit lets you choose which unit you would prefer for it to show you on
 
 Spring pressure is where you put in what the spring currently in the wastegate is rated for (used for calculating wastegate "openness" for smoother operation)
 
-WG Open is the pressure you want the wastegate to begin opening, the closer this number to your max boost, the faster you build boost
+Crack Pressure is the pressure you want the wastegate to begin opening, the closer this number to your max boost, the faster you build boost
 
 Max Boost is your max boost, the wastegate will be fully opened past this point
 
-Scale lets you choose the rate the wastegate is opened between WG Open and Max Boost, this can be linear, x^2, x^3, or x^4
+Scale lets you choose the rate the wastegate is opened between Crack Pressure and Max Boost, this can be linear, x^2, x^3, or x^4
 
 There are 4 buttons on the controller, they are "cycle", "next", "up", and "down"
 
@@ -38,3 +38,5 @@ There are 4 buttons on the controller, they are "cycle", "next", "up", and "down
 "next" moves the "cursor" to the right as you're inputting the different values for the boost levels, the cursor over the unit lets you change the unit used for the boost setting options outside of the main display unit
 
 "up" and "down" cycle through the options on the current screen or cursor location
+
+Any values that are "impossible" (max boost is lower than crack pressure or spring pressure), will be snapped to an appropriate value on setting changed (equal to the highest of the 2)
